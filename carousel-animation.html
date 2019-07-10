@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./carousel.css">
+    <style>
+        .select {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+        }
+    
+        .carousel {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="select">
+        选择效果
+        <select>
+            <option value="fade">fade</option>
+            <option value="cssSlide">cssSlide</option>
+            <option value="cssZoom">cssZoom</option>
+        </select>
+    </div>
+    <div class="carousel">
+        <div class="panels">
+            <a href="#"><img src="./img/img-1.jpg" alt=""></a>
+            <a href="#"><img src="./img/img-2.jpg" alt=""></a>
+            <a href="#"><img src="./img/img-3.jpg" alt=""></a>
+            <a href="#"><img src="./img/img-4.jpg" alt=""></a>
+        </div>
+        <div class="action">
+            <div class="pre">上一页</div>
+            <div class="next">下一页</div>
+            <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script src="./carousel-animation.js"></script>
+</body>
+
+</html>
